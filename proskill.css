@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.header{
+
+    padding: 0.125rem;
+    padding-top: 1.125rem;
+    position: fixed;
+    background: #0A0A0A;
+    display: flex;
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+.qualify{ 
+    padding-top: 5rem;
+    font-style: italic;
+    text-align: center;
+    background: #0A0A0A;
+    color: #fff;
+    font-size: 3.125rem;
+    
+}
+
+
+.SQ{
+   
+    font-weight: 700;
+    font-size: 4rem;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    font-style: italic;
+}
+#ps{
+    
+    color: rgb(0, 149, 255);
+}
+
+.top-1 a{
+    position: relative;
+
+    font-size: 1.1rem;
+    box-shadow: 0 2.5px 1px 0 #61667a;
+    color: aliceblue;
+    font-weight: 500;
+    margin: 0 12px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+}
+.top-1 a:hover{
+    background: transparent;
+    color: rgb(0, 149, 255);
+    
+}
+
+.top-1 a::after{
+   content: "";
+   position: absolute;
+   background: rgb(0, 149, 255);
+   width: 100%;
+   height: 2px;
+   left: 0;
+   bottom: -5px;
+   transform: scaleX(0);
+   transform-origin: bottom right;
+   transition: transform 0.3s;
+}
+.top-1 a:hover::after{
+    transform: scaleX(1);
+    transform-origin:bottom left ;
+
+}
+.MQ{
+    font-style: italic;
+    padding-top: 1.125rem;
+}
+.skills{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 37.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 1.675rem;
+    padding-top: 6.125rem;
+    background: #0A0A0A;
+    color: #eee7e7;
+
+}
+.list{
+    
+    
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
+    list-style: none;
+}
+.PL,.WD,.GD{
+    margin-top: 1.125rem;
+    word-spacing: 1.5px;
+    background: #101214;
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+    border-bottom: 3px solid #01dbc2;
+    border-style: double;
+}
+.VE , .Soft-skills , .Lang-skills{
+    margin-top: 1.125rem;
+    padding-top: 1.125rem;
+    margin-right: 0.625rem;
+    margin-left: 0.625rem;
+    border-bottom: 3px solid #01dbc2;
+    border-style: double;
+    background: #101214;
+}
+.skills h4{
+    border-radius: 20px;
+    color: #01dbc2;
+}
+@media(max-width:1168px){
+    .container{
+        font-size: 90%;
+        width: 100%;
+    }
+    .container .qualify .SQ{
+        width: 100%;
+        font-size: 50%;
+    }
+
+    .container .skills{
+        grid-template-columns: repeat(2,1fr); 
+        width: 100%;
+        height: 100%;
+    }
+}
+@media(max-width:568px){
+    
+        .header .top-1 {
+            width: 100%;
+            padding-top: 1rem;
+            font-size: 88%;
+            justify-content: left;
+            align-items: left;
+         }
+         .qualify{
+            padding-top: 7rem;
+            font-size: 8rem;
+         }
+    
+    .container{
+        font-size: 90%;
+        width: 100%;
+    }
+    .container .qualify .SQ{
+        width: 100%;
+        font-size: 50%;
+    }
+
+    .container .skills{
+        grid-template-columns: repeat(1,1fr); 
+        width: 100%;
+        height: 100%;
+    }
+}
