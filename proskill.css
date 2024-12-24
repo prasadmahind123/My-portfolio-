@@ -137,10 +137,10 @@
 }
 @media(max-width:568px){
     
-        .header .top-1 {
+        .header .top-1 a{
             width: 100%;
             padding-top: 1rem;
-            font-size: 88%;
+            font-size: 100%;
             justify-content: left;
             align-items: left;
          }
